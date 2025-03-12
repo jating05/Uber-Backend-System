@@ -1,4 +1,4 @@
-package com.ujjwalsharma.project.uber.uberApp.entities;
+package com.jatingoyal.project.uber.uberApp.entities;
 import jakarta.persistence.*;
 
 @Entity

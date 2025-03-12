@@ -1,9 +1,9 @@
-package com.ujjwalsharma.project.uber.uberApp.services;
+package com.jatingoyal.project.uber.uberApp.services;
 
-import com.ujjwalsharma.project.uber.uberApp.dto.DriverDto;
-import com.ujjwalsharma.project.uber.uberApp.dto.RideDto;
-import com.ujjwalsharma.project.uber.uberApp.dto.RideRequestDto;
-import com.ujjwalsharma.project.uber.uberApp.dto.RiderDto;
+import com.jatingoyal.project.uber.uberApp.dto.DriverDto;
+import com.jatingoyal.project.uber.uberApp.dto.RideDto;
+import com.jatingoyal.project.uber.uberApp.dto.RideRequestDto;
+import com.jatingoyal.project.uber.uberApp.dto.RiderDto;
 
 import java.util.List;
 

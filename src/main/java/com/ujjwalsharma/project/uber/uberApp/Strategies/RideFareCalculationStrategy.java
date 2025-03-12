@@ -1,6 +1,6 @@
-package com.ujjwalsharma.project.uber.uberApp.Strategies;
+package com.jatingoyal.project.uber.uberApp.Strategies;
 
-import com.ujjwalsharma.project.uber.uberApp.dto.RideRequestDto;
+import com.jatingoyal.project.uber.uberApp.dto.RideRequestDto;
 
 public interface RideFareCalculationStrategy {
     double calculateFare(RideRequestDto rideRequestDto);

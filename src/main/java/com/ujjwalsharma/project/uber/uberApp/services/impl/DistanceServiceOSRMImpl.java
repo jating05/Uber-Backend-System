@@ -1,6 +1,6 @@
-package com.ujjwalsharma.project.uber.uberApp.services.impl;
+package com.jatingoyal.project.uber.uberApp.services.impl;
 
-import com.ujjwalsharma.project.uber.uberApp.services.DistanceService;
+import com.jatingoyal.project.uber.uberApp.services.DistanceService;
 import org.locationtech.jts.geom.Point;
 import org.springframework.stereotype.Service;
 

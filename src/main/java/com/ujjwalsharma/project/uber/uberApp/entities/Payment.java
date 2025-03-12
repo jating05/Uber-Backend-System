@@ -1,7 +1,7 @@
-package com.ujjwalsharma.project.uber.uberApp.entities;
+package com.jatingoyal.project.uber.uberApp.entities;
 
-import com.ujjwalsharma.project.uber.uberApp.entities.enums.PaymentMethod;
-import com.ujjwalsharma.project.uber.uberApp.entities.enums.PaymentStatus;
+import com.jatingoyal.project.uber.uberApp.entities.enums.PaymentMethod;
+import com.jatingoyal.project.uber.uberApp.entities.enums.PaymentStatus;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 

@@ -1,8 +1,8 @@
-package com.ujjwalsharma.project.uber.uberApp.Strategies.impl;
+package com.jatingoyal.project.uber.uberApp.Strategies.impl;
 
-import com.ujjwalsharma.project.uber.uberApp.Strategies.DriverMatchingStrategy;
-import com.ujjwalsharma.project.uber.uberApp.dto.RideRequestDto;
-import com.ujjwalsharma.project.uber.uberApp.entities.Driver;
+import com.jatingoyal.project.uber.uberApp.Strategies.DriverMatchingStrategy;
+import com.jatingoyal.project.uber.uberApp.dto.RideRequestDto;
+import com.jatingoyal.project.uber.uberApp.entities.Driver;
 
 import java.util.List;
 

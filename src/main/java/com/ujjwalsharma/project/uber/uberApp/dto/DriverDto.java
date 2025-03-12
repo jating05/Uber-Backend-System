@@ -1,4 +1,4 @@
-package com.ujjwalsharma.project.uber.uberApp.dto;
+package com.jatingoyal.project.uber.uberApp.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

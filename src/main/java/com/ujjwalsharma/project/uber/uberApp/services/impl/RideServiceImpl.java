@@ -1,10 +1,10 @@
-package com.ujjwalsharma.project.uber.uberApp.services.impl;
+package com.jatingoyal.project.uber.uberApp.services.impl;
 
-import com.ujjwalsharma.project.uber.uberApp.dto.RideRequestDto;
-import com.ujjwalsharma.project.uber.uberApp.entities.Driver;
-import com.ujjwalsharma.project.uber.uberApp.entities.Ride;
-import com.ujjwalsharma.project.uber.uberApp.entities.enums.RideStatus;
-import com.ujjwalsharma.project.uber.uberApp.services.RideService;
+import com.jatingoyal.project.uber.uberApp.dto.RideRequestDto;
+import com.jatingoyal.project.uber.uberApp.entities.Driver;
+import com.jatingoyal.project.uber.uberApp.entities.Ride;
+import com.jatingoyal.project.uber.uberApp.entities.enums.RideStatus;
+import com.jatingoyal.project.uber.uberApp.services.RideService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

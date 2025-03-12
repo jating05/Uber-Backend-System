@@ -8,7 +8,7 @@
 		<version>3.3.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ujjwalsharma.project.uber</groupId>
+	<groupId>com.jatingoyal.project.uber</groupId>
 	<artifactId>uberApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>uberApp</name>

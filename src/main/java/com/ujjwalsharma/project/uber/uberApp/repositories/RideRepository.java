@@ -1,6 +1,6 @@
-package com.ujjwalsharma.project.uber.uberApp.repositories;
+package com.jatingoyal.project.uber.uberApp.repositories;
 
-import com.ujjwalsharma.project.uber.uberApp.entities.Ride;
+import com.jatingoyal.project.uber.uberApp.entities.Ride;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

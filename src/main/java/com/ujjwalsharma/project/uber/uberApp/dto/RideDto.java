@@ -1,9 +1,9 @@
-package com.ujjwalsharma.project.uber.uberApp.dto;
+package com.jatingoyal.project.uber.uberApp.dto;
 
-import com.ujjwalsharma.project.uber.uberApp.entities.Driver;
-import com.ujjwalsharma.project.uber.uberApp.entities.Rider;
-import com.ujjwalsharma.project.uber.uberApp.entities.enums.PaymentMethod;
-import com.ujjwalsharma.project.uber.uberApp.entities.enums.RideStatus;
+import com.jatingoyal.project.uber.uberApp.entities.Driver;
+import com.jatingoyal.project.uber.uberApp.entities.Rider;
+import com.jatingoyal.project.uber.uberApp.entities.enums.PaymentMethod;
+import com.jatingoyal.project.uber.uberApp.entities.enums.RideStatus;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.locationtech.jts.geom.Point;

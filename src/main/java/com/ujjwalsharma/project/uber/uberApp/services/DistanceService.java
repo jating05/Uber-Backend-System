@@ -1,4 +1,4 @@
-package com.ujjwalsharma.project.uber.uberApp.services;
+package com.jatingoyal.project.uber.uberApp.services;
 
 import org.locationtech.jts.geom.Point;
 

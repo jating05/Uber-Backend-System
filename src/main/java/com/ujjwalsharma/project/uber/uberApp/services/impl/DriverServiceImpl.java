@@ -1,8 +1,8 @@
-package com.ujjwalsharma.project.uber.uberApp.services.impl;
+package com.jatingoyal.project.uber.uberApp.services.impl;
 
-import com.ujjwalsharma.project.uber.uberApp.dto.DriverDto;
-import com.ujjwalsharma.project.uber.uberApp.dto.RideDto;
-import com.ujjwalsharma.project.uber.uberApp.services.DriverService;
+import com.jatingoyal.project.uber.uberApp.dto.DriverDto;
+import com.jatingoyal.project.uber.uberApp.dto.RideDto;
+import com.jatingoyal.project.uber.uberApp.services.DriverService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

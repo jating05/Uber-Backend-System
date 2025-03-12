@@ -1,4 +1,4 @@
-package com.ujjwalsharma.project.uber.uberApp.configs;
+package com.jatingoyal.project.uber.uberApp.configs;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
