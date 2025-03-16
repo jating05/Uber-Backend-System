@@ -15,12 +15,15 @@ import java.util.Optional;
 
 @Repository
 public interface DriverRepository extends JpaRepository<Driver, Long> {
+//    Custom Query
+
     @Query(value = "SELECT d.*, ST_Distance(d.current_location, :pickupLocation) AS distance " +
             "FROM driver d " +
             "WHERE d.available = true AND ST_DWithin(d.current_location, :pickupLocation, 10000) " +
             "ORDER BY distance " +
             "LIMIT 10", nativeQuery = true)
     List<Driver> findTenNearestDrivers(Point pickupLocation);
+//    Custom Query
 
     @Query(value = "SELECT d.* " +
             "FROM driver d " +

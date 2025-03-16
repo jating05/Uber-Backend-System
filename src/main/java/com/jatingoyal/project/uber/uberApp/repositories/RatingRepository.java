@@ -13,5 +13,6 @@ public interface RatingRepository extends JpaRepository<Rating, Long> {
     List<Rating> findByRider(Rider rider);
     List<Rating> findByDriver(Driver driver);
 
-    Optional<Rating> findByRide(Ride ride);
+//    Custom Query
+//    Optional<Rating> findByRide(Ride ride);
 }

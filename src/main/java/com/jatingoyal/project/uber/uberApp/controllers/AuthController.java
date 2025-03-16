@@ -45,12 +45,4 @@ public class AuthController {
         return ResponseEntity.ok(new LoginResponseDto(tokens[0]));
     }
 
-
-
-
-
-
-
-
-
 }
