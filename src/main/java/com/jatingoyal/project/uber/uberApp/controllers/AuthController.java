@@ -19,6 +19,13 @@ import java.util.Arrays;
 @RequiredArgsConstructor
 public class AuthController {
 
+    private final AuthService authService;
+
+    @PostMapping("/signup")
+    ResponseEntity<UserDto> signUp(@RequestBody SignupDto signupDto) {
+        return new ResponseEntity<>(authService.signup(signupDto), HttpStatus.CREATED);
+    }
+
 
 
 
