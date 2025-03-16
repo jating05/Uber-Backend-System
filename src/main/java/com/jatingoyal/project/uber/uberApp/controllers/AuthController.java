@@ -32,6 +32,18 @@ public class AuthController {
         return new ResponseEntity<>(authService.onboardNewDriver(userId,
                 onboardDriverDto.getVehicleId()), HttpStatus.CREATED);
     }
+    @PostMapping("/login")
+    ResponseEntity<LoginResponseDto> login(@RequestBody LoginRequestDto loginRequestDto,
+                                           HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
+        String tokens[] = authService.login(loginRequestDto.getEmail(), loginRequestDto.getPassword());
+
+        Cookie cookie = new Cookie("token", tokens[1]);
+        cookie.setHttpOnly(true);
+
+        httpServletResponse.addCookie(cookie);
+
+        return ResponseEntity.ok(new LoginResponseDto(tokens[0]));
+    }
 
 
 
