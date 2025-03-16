@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+//TODO: Adding CC
 public class Wallet {
 
     @Id
