@@ -38,7 +38,6 @@ public class AuthController {
         String tokens[] = authService.login(loginRequestDto.getEmail(), loginRequestDto.getPassword());
 
         Cookie cookie = new Cookie("token", tokens[1]);
-        cookie.setHttpOnly(true);
 
         httpServletResponse.addCookie(cookie);
 
