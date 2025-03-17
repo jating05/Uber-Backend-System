@@ -1,5 +1,8 @@
 package com.jatingoyal.project.uber.uberApp.controllers;
 
+
+//@author Jatin Goyal
+
 import com.jatingoyal.project.uber.uberApp.dto.*;
 import com.jatingoyal.project.uber.uberApp.dto.*;
 import com.jatingoyal.project.uber.uberApp.services.DriverService;
@@ -52,7 +55,7 @@ public class DriverController {
 
     @GetMapping("/getMyRides")
     public ResponseEntity<Page<RideDto>> getAllMyRides(@RequestParam(defaultValue = "0") Integer pageOffset,
-                                                       @RequestParam(defaultValue = "10", required = false) Integer pageSize) {
+                                                       @RequestParam(defaultValue = "10") Integer pageSize) {
         PageRequest pageRequest = PageRequest.of(pageOffset, pageSize,
                 Sort.by(Sort.Direction.DESC, "createdTime", "id"));
         return ResponseEntity.ok(driverService.getAllMyRides(pageRequest));
