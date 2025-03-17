@@ -57,6 +57,8 @@ public class RiderServiceImpl implements RiderService {
                 .driverMatchingStrategy(rider.getRating()).findMatchingDriver(rideRequest);
 
 //        TODO : Send notification to all the drivers about this ride request
+//        TODO : Use Twilio
+
 
         return modelMapper.map(savedRideRequest, RideRequestDto.class);
     }
