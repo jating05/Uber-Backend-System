@@ -2,6 +2,7 @@ package com.jatingoyal.project.uber.uberApp.services;
 
 
 import com.jatingoyal.project.uber.uberApp.entities.AuditLog;
+import com.jatingoyal.project.uber.uberApp.repositories.AuditLogRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

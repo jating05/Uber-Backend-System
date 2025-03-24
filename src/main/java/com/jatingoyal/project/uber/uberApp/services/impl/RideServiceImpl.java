@@ -8,6 +8,7 @@ import com.jatingoyal.project.uber.uberApp.entities.enums.RideRequestStatus;
 import com.jatingoyal.project.uber.uberApp.entities.enums.RideStatus;
 import com.jatingoyal.project.uber.uberApp.exceptions.ResourceNotFoundException;
 import com.jatingoyal.project.uber.uberApp.repositories.RideRepository;
+import com.jatingoyal.project.uber.uberApp.services.AuditLogService;
 import com.jatingoyal.project.uber.uberApp.services.RideRequestService;
 import com.jatingoyal.project.uber.uberApp.services.RideService;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +23,7 @@ import java.util.Random;
 @RequiredArgsConstructor
 public class RideServiceImpl implements RideService {
 
+    private final AuditLogService auditLogService;
     private final RideRepository rideRepository;
     private final RideRequestService rideRequestService;
     private final ModelMapper modelMapper;
@@ -49,7 +51,18 @@ public class RideServiceImpl implements RideService {
 
     @Override
     public Ride updateRideStatus(Ride ride, RideStatus rideStatus) {
+        RideStatus oldStatus = ride.getRideStatus();
         ride.setRideStatus(rideStatus);
+
+
+        // Log the status change
+        auditLogService.log(
+                "UPDATE_STATUS",
+                "Ride",
+                ride.getId(),
+                "Status changed from " + oldStatus + " to " + rideStatus
+        );
+
         return rideRepository.save(ride);
     }
 
